@@ -12,6 +12,10 @@ const Nav = () => {
         setOpen(!open)
     }
 
+    const scrollToSection = (id) => {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
+    }
+
     return (
         <>
         <div
@@ -33,7 +37,9 @@ const Nav = () => {
                 <div>
                 {nav.map((item , index) => {
                     return (
-                        <div key={index} className='home text-gray-300 text-center pt-6 font-semibold text-[1.9rem]'> 
+                        <div key={index}
+                        onClick={ () => scrollToSection(item.id) }
+                        className='home text-gray-300 text-center pt-6 font-semibold text-[1.9rem]'> 
                            
                                 {item.name} 
                             

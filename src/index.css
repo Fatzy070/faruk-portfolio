@@ -29,3 +29,40 @@ body {
   transform: scale(1.1);
   transition: 300ms ease-in;
 }
+/* about.css */
+.text-collapse {
+  max-height: 200px;
+  overflow: hidden;
+  opacity: 0.8;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.text-expand {
+  max-height: 1000px; /* enough to show full text */
+  opacity: 1;
+  transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+/* fade animation for smoother reveal */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
