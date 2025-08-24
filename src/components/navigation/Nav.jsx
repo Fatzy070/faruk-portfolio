@@ -5,7 +5,10 @@ import Data from '../../data/Data';
 
 const Nav = () => {
     const { nav } = Data;
-
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
+  
     return (
          <>
            <section className='flex justify-between  my-4 px-5 lg:my-0 md:my-7 py-3 md:px-15 lg:px-7 items-center'>
@@ -15,11 +18,13 @@ const Nav = () => {
             <div className=' hidden md:flex gap-8'>
                 {nav.map((item , index) => {
                     return (
-                        <div key={index} className='home text-[1rem] '> 
-                           
-                                {item.name} 
-                            
-                        </div>
+                         <button
+            key={index}
+            onClick={() => scrollToSection(item.id)}
+            className='home text-[1rem] '
+          >
+            {item.name}
+          </button>
                     )
                 })}
             </div>
