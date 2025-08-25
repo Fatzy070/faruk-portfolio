@@ -42,8 +42,12 @@ const Data ={
     abouttext:`I’m a passionate Software Developer focused on building modern and scalable web applications with JavaScript, React, and Node.js. I love turning ideas into real solutions that make an impact.
 Beyond development, I’m currently exploring cybersecurity, sharpening my skills to better understand how technology can be built, secured, and protected. My long-term goal is to combine both development and security to create innovative and safe digital experiences.
 When I’m not coding, I’m learning, experimenting, and pushing myself to grow as a developer and as an upcoming cybersecurity expert. 🚀`,
-frontend:[
-    {id:1 , siteName: ' ' , aboutsite:'' , react:'' , tailwind:'' , link:'' , github:'' , image:''}
+project:[
+    {id:1 , siteName: 'crypgo' , about:'A modern cryptocurrency tracker that provides users with real-time data on various coins. Built with React and TailwindCSS for a sleek interface, and Node.js for backend operations, Crypgo delivers a smooth experience for monitoring and exploring crypto trends.' , react:'react' , tailwind:'tailwind' , link:'https://crypto-psi-five-92.vercel.app/' , github:'https://github.com/Fatzy070/crypto-frontend' , image:crypto , node:'node.js' },
+    {id:2 , siteName: 'YouthVenture' , about:'An engaging travel and adventure website designed for young explorers. YouthVenture showcases destinations, experiences, and stories with a responsive design powered by React and TailwindCSS, while Node.js ensures seamless backend support.' , react:'react' , tailwind:'tailwind' , link:'https://traveller-coral.vercel.app/' , github:'https://github.com/Fatzy070/traveller' , image: youth , node:'node.js'} ,
+    {id:3 , siteName:'profusion' , about:'A clean and minimal portfolio project highlighting professional presentation. Developed with HTML and CSS, Profusion demonstrates strong fundamentals in responsive web design while focusing on elegance and simplicity.' , image: profusion , css:'css' , html:'html' , github:'https://github.com/Fatzy070/fartzy-pro' , link:'https://fartzy-pro.vercel.app/' },
+    {id:4 , siteName:'kopee' , about:'A modern coffee shop landing page that blends style with usability. Built using pure HTML and CSS, Kopee emphasizes branding and user-friendly layout while practicing structured, responsive web design.' , image:kopee , github:'https://github.com/Fatzy070/kopee' , html:'html' , css:'css' , link:'https://kopee-xi.vercel.app/' } ,
+    {id:5 , siteName:'weatherApp' , html:'html' , css:'css' , github:'https://github.com/Fatzy070/liveweather' , link:'https://liveweather-inky.vercel.app/' , image:weather , about:'A real-time weather application that allows users to search and view live weather conditions of any city worldwide. Built with HTML, CSS, and JavaScript, it integrates with a weather API to display accurate data including temperature, humidity, and weather descriptions in a clean and responsive interface.' }
 ]
 
 
