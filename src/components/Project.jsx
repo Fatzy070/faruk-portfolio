@@ -18,7 +18,7 @@ const Project = () => {
             <div key={item} className='bounce bg-[rgba(30,41,59,255)] rounded-[8px] overflow-hidden '> 
                 <img src={item.image} alt={item.siteName} className='  w-full '/>
                 <div className='p-5'>
-                  <h2 className='capitalize font-semibold md:text-2xl'>{item.siteName}</h2>
+                  <h2 className='capitalize text-white font-semibold md:text-2xl'>{item.siteName}</h2>
                   <p className='py-2 text-gray-300 text-[13px] md:text-[1rem]'>{item.about}</p>
                   <div className='py-3'>
                     { item.html && (
