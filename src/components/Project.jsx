@@ -7,7 +7,7 @@ const Project = () => {
   const { project } = Data;
 
   return (
-    <section className="px-6 py-7 bg-[rgba(2,6,23,255)]">
+    <section className="px-6 py-7 bg-[rgba(2,6,23,255)]" id='projects'>
       <h1 id='project' className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800 dark:text-gray-100">
         My Work & Projects
       </h1>
@@ -26,6 +26,9 @@ const Project = () => {
                   )}
                   { item.css && (
                       <span className='px-2 rounded-2xl py-[2px] text-[14px] mr-2 bg-gray-700  capitalize  '>{item.css}</span>
+                  )}
+                  { item.javascript && (
+                      <span className='px-2 rounded-2xl py-[2px] text-[14px] mr-2 bg-gray-700  capitalize  '>{item.javascript}</span>
                   )}
                   {item.react && (
                     <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-gray-700  capitalize  '>{item.react} </span>

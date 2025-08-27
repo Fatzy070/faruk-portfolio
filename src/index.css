@@ -8,7 +8,9 @@
   --bg: #0f172a;   /* dark background */
   --text: #f8fafc; /* light text */
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   
   background-color: var(--bg);
@@ -68,4 +70,8 @@ body {
 .bounce:hover {
   transform: translateY(-10px);
   transition: 0.3s ease-in;
+}
+.scale:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
 }

@@ -10,7 +10,7 @@ import weather from '../assets/weather.png'
 const Data ={
     nav:[
         {id:'about' , name:'About' },
-        {id:'project' , name:'Projects'},
+        {id:'project' , name:'Projects' },
         {id:'experience' , name:'Experience'},
         {id:'contact' , name:'Contact'},
     ],
@@ -47,24 +47,24 @@ project:[
     {id:2 , siteName: 'YouthVenture' , about:'An engaging travel and adventure website designed for young explorers. YouthVenture showcases destinations, experiences, and stories with a responsive design powered by React and TailwindCSS, while Node.js ensures seamless backend support.' , react:'react' , tailwind:'tailwind' , link:'https://traveller-coral.vercel.app/' , github:'https://github.com/Fatzy070/traveller' , image: youth , node:'node.js'} ,
     {id:3 , siteName:'profusion' , about:'A clean and minimal portfolio project highlighting professional presentation. Developed with HTML and CSS, Profusion demonstrates strong fundamentals in responsive web design while focusing on elegance and simplicity.' , image: profusion , css:'css' , html:'html' , github:'https://github.com/Fatzy070/fartzy-pro' , link:'https://fartzy-pro.vercel.app/' },
     {id:4 , siteName:'kopee' , about:'A modern coffee shop landing page that blends style with usability. Built using pure HTML and CSS, Kopee emphasizes branding and user-friendly layout while practicing structured, responsive web design.' , image:kopee , github:'https://github.com/Fatzy070/kopee' , html:'html' , css:'css' , link:'https://kopee-xi.vercel.app/' } ,
-    {id:5 , siteName:'weatherApp' , html:'html' , css:'css' , github:'https://github.com/Fatzy070/liveweather' , link:'https://liveweather-inky.vercel.app/' , image:weather , about:'A real-time weather application that allows users to search and view live weather conditions of any city worldwide. Built with HTML, CSS, and JavaScript, it integrates with a weather API to display accurate data including temperature, humidity, and weather descriptions in a clean and responsive interface.' }
+    {id:5 , siteName:'weatherApp' , html:'html' , css:'css' , github:'https://github.com/Fatzy070/liveweather' , link:'https://liveweather-inky.vercel.app/' , image:weather , about:'A real-time weather application that allows users to search and view live weather conditions of any city worldwide. Built with HTML, CSS, and JavaScript, it integrates with a weather API to display accurate data including temperature, humidity, and weather descriptions in a clean and responsive interface.' , javascript:'Javascript' }
 ],
 exp:'experience',
 inter:'intern - SP Tech',
 date:'jan 2025 - jun 2025 ',
 work:[
     {id:1 , name:'Worked with a team to develop and maintain web applications using React, Node.js, and MongoDB.'},
-    {id:1 , name:'Assisted in creating and consuming REST APIs, focusing on secure authentication and data flow.'},
-    {id:1 , name:'Improved debugging and problem-solving skills while collaborating on real-world client projects.'},
+    {id:2 , name:'Assisted in creating and consuming REST APIs, focusing on secure authentication and data flow.'},
+    {id:3 , name:'Improved debugging and problem-solving skills while collaborating on real-world client projects.'},
 ],
 personal:'Freelance Web Developer / Personal Projects',
 freelance:[
     {id:1 , name:'Crypgo' , about:'Cryptocurrency tracker with live market data.'},
     {id:2 , name:'YouthVenture' , about:'Travel & adventure platform for young explorers.'},
     {id:3 , name:'kopee' , about:'Coffee shop landing page with modern, responsive UI.'}
-]
-
-
+],
+get:'get in touch',
+getText:`I’m open to exciting opportunities and collaborations. Whether you’d like to connect, share ideas, or simply say hello, feel free to reach out. Let’s create something impactful together.`
 
         
 };

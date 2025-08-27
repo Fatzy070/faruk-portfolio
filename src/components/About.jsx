@@ -15,8 +15,8 @@ const About = () => {
 
     return (
         <>
-          <div className='text-center mb-5 mx-5 md:mx-20 lg:mx-35 mt-10'>
-                <h1 id='about' className='font-bold capitalize text-[1.5rem] md:text-3xl' >{about}</h1>
+          <div className=' mb-5 mx-5 md:mx-20 lg:mx-35 mt-10'>
+                <h1 id='about' className='font-bold capitalize text-center text-[1.5rem] md:text-3xl' >{about}</h1>
                       <p
         className={`text-[1rem] md:text-[1.2rem] pt-5 text-gray-300 ${
           open ? "text-expand" : "text-collapse"

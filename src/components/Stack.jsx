@@ -12,7 +12,7 @@ const Stack = () => {
     return (
         <>
         <div className='text-center py-3 mx-8'>
-            <h1 className='capitalize font-bold text-[1.5rem] md:text-4xl'>my tech stack & skills </h1>
+            <h1 className='capitalize font-semibold md:font-bold text-[1.3rem] md:text-4xl'>my tech stack & skills </h1>
             <p className='pt-3 text-gray-400 md:text-[1.1rem]'>The tools and technologies I use to build modern web applications.</p>
         </div>
         <section className=' mx-8 md:mx-5 lg:mx-38 mt-5 '>
@@ -20,7 +20,7 @@ const Stack = () => {
                 <div className='flex text-[rgba(59,130,246,255)]'>
                 <p className='border-[2px] h-[30px]  '></p>
             </div>
-            <h1 className='text-center font-bold text-[1.3rem] md:text-[1.5rem] w-full'>Languages & Frameworks</h1>
+            <h1 className='text-center font-bold text-[1.2rem] md:text-[1.5rem] w-full'>Languages & Frameworks</h1>
             </div>
             <section className='grid gap-5 mt-5 grid-cols-2 md:grid-cols-4'>
                 <div className='flex lan capitalize  text-black font-semibold lg:w-[230px] items-center bg-yellow-300 text-[1rem] p-3  gap-3 rounded-[8px]'>
@@ -70,7 +70,7 @@ const Stack = () => {
 
             </section>
         </section>
-        <section className=' mx-8 md:mx-5 lg:mx-38 mt-5 '>
+        <section className=' mx-8 md:mx-5 lg:mx-38 mt-10 '>
              <div className='flex items-center'>
                 <div className='flex text-[rgba(59,130,246,255)]'>
                 <p className='border-[2px] h-[30px]  '></p>
@@ -100,7 +100,7 @@ const Stack = () => {
                      
             </section>
         </section>
-        <section className=' mx-8 md:mx-5 lg:mx-38 mt-5 '>
+        <section className=' mx-8 md:mx-5 lg:mx-38 mt-10'>
              <div className='flex items-center'>
                 <div className='flex text-[rgba(59,130,246,255)]'>
                 <p className='border-[2px] h-[30px]  '></p>
