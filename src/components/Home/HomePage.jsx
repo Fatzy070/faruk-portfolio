@@ -22,7 +22,7 @@ const Home = () => {
 
     return (
        <>
-      <div className={` md:m-0 sticky top-3 md:top-0 z-40 ${scrolled ? 'text-white m-3 rounded-[10px] border backdrop-blur-md bg-black/40 md:border-none':'bg-transparent'}`}>
+      <div className={` md:m-0 sticky top-3 md:top-0 z-10 ${scrolled ? 'text-white m-3 rounded-[10px] border backdrop-blur-md bg-black/40 md:border-none':'bg-transparent'}`}>
           <Header />
       </div>
         <Skill />
