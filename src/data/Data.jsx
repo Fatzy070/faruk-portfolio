@@ -7,7 +7,7 @@ import weather from '../assets/weather.png'
 import dashboard from '../assets/dashboard.png'
 import blog from '../assets/blog.png'
 import fintech from '../assets/fintech.png'
-
+import cryptoNova from '../assets/Crypto2.jpg'
 
 const Data ={
     nav:[
@@ -45,7 +45,8 @@ const Data ={
 Beyond development, I’m currently exploring cybersecurity, sharpening my skills to better understand how technology can be built, secured, and protected. My long-term goal is to combine both development and security to create innovative and safe digital experiences.
 When I’m not coding, I’m learning, experimenting, and pushing myself to grow as a developer and as an upcoming cybersecurity expert. 🚀`,
 project:[
-    {id:1 , siteName: 'Fintech' , about:'A modern fintech app that simplifies personal finance by helping users track expenses, monitor savings, and make smarter financial decisions. Built with cutting-edge web technologies, it combines a sleek, responsive interface with secure, real-time features for seamless money management.' , react:'react' , tailwind:'tailwind' , link:'https://naijafintech.vercel.app/' , github:'https://github.com/Fatzy070/tracker-frontend' , image:fintech , node:'mongoDB' },
+    {id:1 , siteName: 'Fintech' , about:'A modern fintech app that simplifies personal finance by helping users track expenses, monitor savings, and make smarter financial decisions. Built with cutting-edge web technologies, it combines a sleek, responsive interface with secure, real-time features for seamless money management.' , react:'react' , tailwind:'tailwind' , link:'https://naijafintech.vercel.app/' , github:'https://github.com/Fatzy070/tracker-frontend' , image:fintech , node:'Node.js' },
+    {id:1 , siteName: 'CryptoNova' , about:'A live cryptocurrency portfolio tracker that lets users monitor their crypto assets in real time. Built with React.js and integrated with live market APIs, CryptoNova features Google login, smooth portfolio management, and a clean, interactive dashboard.' , react:'react' , tailwind:'tailwind' , link:'https://crypto-nova-neon.vercel.app/' , github:'https://github.com/Fatzy070/CryptoNova-frontend' , image:cryptoNova , node:'Node.js' },
     {id:2 , siteName: 'Blog' , about:'This is a mini social media/blog application built with React, Firebase, and Tailwind CSS. Users can create accounts, login via email or Google, edit their profiles, and create posts with text, images, or videos.' , react:'react' , tailwind:'tailwind' , link:'https://blogwebapp-red.vercel.app/' , github:'https://github.com/Fatzy070/blogwebapp' , image:blog , node:'firebase' },
     {id:3 , siteName: 'crypgo' , about:'A modern cRryptocurrency tracker that provides users with real-time data on various coins. Built with React and TailwindCSS for a sleek interface, and Node.js for backend operations, Crypgo delivers a smooth experience for monitoring and exploring crypto trends.' , react:'react' , tailwind:'tailwind' , link:'https://crypto-psi-five-92.vercel.app/' , github:'https://github.com/Fatzy070/crypto-frontend' , image:crypto , node:'node.js' },
     {id:4 , siteName: 'dashboard' , about:'An interactive admin dashboard that visualizes key metrics and data in a clean interface. Built with React and TailwindCSS for the frontend and Node.js on the backend, this project demonstrates dynamic data fetching, state management, and responsive design for real-world business use cases.' , react:'react' , tailwind:'tailwind' , link:'https://dashboard-blond-five-33.vercel.app/' , github:'https://github.com/Fatzy070/dashboard' , image:dashboard , node:'node.js' },
