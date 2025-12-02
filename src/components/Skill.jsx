@@ -1,7 +1,7 @@
 import React from 'react';
 import Data from '../data/Data';
 import Stack from './Stack';
-// import CV from '../../public/Resume _ Ogunsola Faruk.docx'
+
 
 const Skill = () => {
     const { name , software , web , view , down} = Data;
@@ -19,7 +19,7 @@ const Skill = () => {
                       {view}
                   </a>
                     </p>
-                <p  className='font-semibold border border-2 border-gray-400 text-white  py-3 rounded-[8px] w-[150px] capitalize'>
+                <p  className='font-semibold border border-2 border-gray-400 text-gray-300  py-3 rounded-[8px] w-[150px] capitalize'>
                   <a href="/Resume _ Ogunsola Faruk.docx" download>
                       {down}
                   </a>
