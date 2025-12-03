@@ -19,11 +19,15 @@ const Skill = () => {
                       {view}
                   </a>
                     </p>
-                <p  className='font-semibold border border-2 border-gray-400 text-gray-300  py-3 rounded-[8px] w-[150px] capitalize'>
-                  <a href="/Resume _ Ogunsola Faruk.docx" download>
-                      {down}
-                  </a>
-                    </p>
+               <p className='font-semibold border border-2 border-gray-400 text-gray-300 py-3 rounded-[8px] w-[150px] capitalize'>
+  <a
+    href="https://docs.google.com/document/d/1oRl_xhR1svH0Fxp2GMmAi2IGNh_BdTMM/edit"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {down}
+  </a>
+</p>
             </div>
         </div>
         <Stack />
