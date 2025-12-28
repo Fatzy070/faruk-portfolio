@@ -6,9 +6,10 @@ import { FaPython , FaReact ,  FaGitAlt , FaGithub ,  } from "react-icons/fa";
 import { IoLogoNodejs , IoLogoCss3 } from "react-icons/io";
 import { HiOutlineCommandLine } from "react-icons/hi2";
 import { CgCloud } from 'react-icons/cg';
+import { RiNextjsFill } from "react-icons/ri";
 
 const Stack = () => {
-    const {  js ,  type ,  python , react , node , ex  , html , css , tailwind , mongodb , redis , cloud , fire , git , github , vercel , cli , render , red } = Data
+    const {  js ,  type ,  python , react , node , ex  , html , css , tailwind , mongodb , redis , cloud , fire , git , github , vercel , cli , render , red , next } = Data
     return (
         <>
         <div className='text-center py-3 mx-8'>
@@ -42,8 +43,12 @@ const Stack = () => {
                 <FaReact size={35} />
                 <p>{react}</p>
             </div>  
+            <div className='flex text-white lan  font-semibold lg:w-[230px] items-center bg-black text-[1rem] p-3  gap-3 rounded-[8px]'>
+                <RiNextjsFill size={35} />
+                <p>{next}</p>
+            </div>  
 
-            <div className='flex  text-white lan capitalize font-semibold lg:w-[230px] items-center bg-[rgba(51,153,51,255)] text-[1rem] p-3  gap-3 rounded-[8px]'>
+            <div className='flex  text-white lan font-semibold lg:w-[230px] items-center bg-[rgba(51,153,51,255)] text-[1rem] p-3  gap-3 rounded-[8px]'>
                 <IoLogoNodejs size={35} />
                 <p>{node}</p>
             </div>    

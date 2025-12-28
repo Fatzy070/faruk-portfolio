@@ -27,7 +27,7 @@ const Data = {
     type: 'typescript',
     python: 'python',
     react: 'react',
-    node: 'node.js',
+    node: 'Node.js',
     tailwind: 'tailwind',
     mongodb: 'mongodb',
     redis: 'redis',
@@ -43,6 +43,7 @@ const Data = {
     css: 'css3',
     red: 'redis',
     about: 'about me ',
+    next:'Next.js',
     down: '📄 Download CV' ,
     abouttext: `I’m a passionate Software Developer focused on building modern and scalable web applications with JavaScript, React, and Node.js. I love turning ideas into real solutions that make an impact.
 Beyond development, I’m currently exploring cybersecurity, sharpening my skills to better understand how technology can be built, secured, and protected. My long-term goal is to combine both development and security to create innovative and safe digital experiences.
