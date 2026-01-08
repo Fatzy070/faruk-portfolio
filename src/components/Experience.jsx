@@ -4,12 +4,12 @@ const Experience = () => {
   return (
    <>
        <main className="py-10 px-6 md:px-16">
-          <section id="experience" className="bg-gray-50 dark:bg-gray-900 ">
-      <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">
+          <section id="experience" className="">
+      <h2 className="text-3xl font-bold mb-8 ">
         Experience
       </h2>
 
-      {/* Timeline item */}
+     
       <div className="relative pl-6 border-l-2 border-blue-500 dark:border-blue-400">
         {/* Dot */}
         <span className="absolute left-[-6px] top-2 w-3 h-3 rounded-full bg-blue-500 dark:bg-blue-400"></span>
