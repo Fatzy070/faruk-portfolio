@@ -9,7 +9,7 @@ const Experience = () => {
         Experience & Education
       </h2>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <section>
           <div className="relative pl-6 border-l-2 border-blue-500 dark:border-blue-400">
         <span className="absolute left-[-6px] top-2 w-3 h-3 rounded-full bg-blue-500 dark:bg-blue-400"></span>
