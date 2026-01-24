@@ -25,7 +25,7 @@ const Data = {
   hire: 'Hire me',
   name: "I'm Ogunsola Faruk",
   software: "a Software Engineer",
-  web: "Passionate Software Developer shaping Africa's tech future with JavaScript, Python, React, and Node.js.",
+  web: "Passionate Software Developer shaping Africa's tech future with JavaScript, Next.js, React, and Node.js.",
   view: "view projects",
   down: '📄 Download CV',
 

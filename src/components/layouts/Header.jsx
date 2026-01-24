@@ -13,7 +13,7 @@ const Header = () => {
          <>
            <section className='flex justify-between  px-5 py-3  lg:my-0 md:my-7  md:px-15 lg:px-7 items-center'>
              <div className='fatzy'>
-               <h1>FATZY.dev</h1> 
+               <h1>OF.dev</h1> 
             </div>
             <div className=' hidden md:flex gap-8'>
                 {nav.map((item , index) => {
