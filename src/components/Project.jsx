@@ -40,7 +40,7 @@ const Project = () => {
                     <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-gray-700  capitalize  ' >{item.node}</span>
                   )}
                   {item.node && (
-                    <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-gray-700  capitalize  ' >{item.node}</span>
+                    <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-gray-700  capitalize  ' >{item.data}</span>
                   )}
                   </div>
                   <div className='flex gap-3'>

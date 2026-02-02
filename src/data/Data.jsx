@@ -11,6 +11,7 @@ import cryptoNova from '../assets/Crypto2.jpg';
 import zyntek from '../assets/zyntek.png';
 import learn from '../assets/learn.png';
 import logi from '../assets/logi.png';
+import Nexus from '../../public/nexus.png'
 
 const Data = {
   // Navigation
@@ -61,6 +62,18 @@ Committed to continuous learning and technical excellence, I actively stay updat
 
   // Projects
   project: [
+    {
+      id: 1,
+      siteName: 'Nexus social',
+      about: `LogiXpress is a modern logistics platform that makes shipping and package tracking fast, reliable, and effortless. Users can create shipments, track them in real-time, and manage deliveries with ease. The platform features a responsive and intuitive UI, built with React and Tailwind CSS. It integrates with a backend API for real-time updates and seamless data management. LogiXpress empowers users to stay in control of their shipments, anytime, anywhere.`,
+      react: 'next.js',
+      tailwind: 'tailwind',
+      link: 'https://nexus-tau-taupe.vercel.app/',
+      github: 'https://github.com/Fatzy070/social-frontend-',
+      image: Nexus,
+      node: 'Node.js',
+      data: 'MongoDB'
+    },
     {
       id: 1,
       siteName: 'LogiXpress',
