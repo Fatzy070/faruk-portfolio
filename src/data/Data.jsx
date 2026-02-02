@@ -65,7 +65,7 @@ Committed to continuous learning and technical excellence, I actively stay updat
     {
       id: 1,
       siteName: 'Nexus social',
-      about: `LogiXpress is a modern logistics platform that makes shipping and package tracking fast, reliable, and effortless. Users can create shipments, track them in real-time, and manage deliveries with ease. The platform features a responsive and intuitive UI, built with React and Tailwind CSS. It integrates with a backend API for real-time updates and seamless data management. LogiXpress empowers users to stay in control of their shipments, anytime, anywhere.`,
+      about: `Nexus Social is a production-grade full-stack ecosystem designed to mirror the complexity of modern social platforms. Built with Next.js and Node.js, the project prioritizes system integrity and performance. Beyond core features like real-time messaging and content interaction, I focused on implementing a scalable API architecture, rigorous authentication protocols, and protected routing to ensure a secure, seamless user experience from the ground up.`,
       react: 'next.js',
       tailwind: 'tailwind',
       link: 'https://nexus-tau-taupe.vercel.app/',
