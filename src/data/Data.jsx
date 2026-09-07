@@ -54,25 +54,27 @@ const Data = {
 
   // About Section
   about: 'about me',
-  abouttext: `I'm a dedicated Software Developer with expertise in building modern, scalable web applications using JavaScript, React, and Node.js. I specialize in transforming conceptual ideas into robust, production-ready solutions that deliver tangible business value.
+  abouttext: `I’m a Software Developer focused on building modern, scalable, and user-focused applications across web and mobile platforms. I work primarily with JavaScript, TypeScript, React, React Native, Node.js, and modern backend technologies to develop responsive interfaces, RESTful APIs, real-time features, and reliable application services.
 
-Currently expanding my expertise into cybersecurity, I'm developing a comprehensive understanding of secure development practices and threat mitigation strategies. My objective is to bridge software engineering with security principles, creating resilient digital solutions that prioritize both functionality and protection.
+I enjoy taking ideas from concept to production, working across both frontend and backend systems to build complete, maintainable solutions. My experience includes developing web applications, mobile experiences, backend services, authentication systems, database-driven applications, third-party integrations, and real-time functionality.
 
-Committed to continuous learning and technical excellence, I actively stay updated with emerging technologies while applying industry best practices to every project I undertake.`,
+I’m passionate about writing clean, maintainable code and continuously improving the way I design, build, and deliver software. I enjoy solving technical problems, learning new technologies, collaborating with other developers, and turning real-world requirements into practical digital products.`,
 
   // Projects
   project: [
     {
       id: 1,
       siteName: 'Nexus social',
-      about: `Nexus Social is a production-grade full-stack ecosystem designed to mirror the complexity of modern social platforms. Built with Next.js and Node.js, the project prioritizes system integrity and performance. Beyond core features like real-time messaging and content interaction, I focused on implementing a scalable API architecture, rigorous authentication protocols, and protected routing to ensure a secure, seamless user experience from the ground up.`,
+      about: `Nexus is a modern social platform built to bring people, conversations, and communities together in one seamless space. Users can share posts, discover content, follow people, chat privately or in groups, share media and voice messages, receive real-time notifications, and manage their privacy and account settings.
+      Nexus is designed around real-time communication, meaningful social interaction, and a fast, polished experienceacross both web and mobile.`,
       react: 'next.js',
       tailwind: 'tailwind',
       link: 'https://nexus-tau-taupe.vercel.app/',
       github: 'https://github.com/Fatzy070/social-frontend-',
       image: Nexus,
       node: 'Node.js',
-      data: 'MongoDB'
+      data: 'MongoDB',
+      query:'tanstack'
     },
     {
       id: 1,
@@ -133,20 +135,9 @@ Committed to continuous learning and technical excellence, I actively stay updat
       image: cryptoNova,
       node: 'Node.js'
     },
+    
     {
       id: 6,
-      siteName: 'Blog',
-      about: 'This is a mini social media/blog application built with React, Firebase, and Tailwind CSS. Users can create accounts, login via email or Google, edit their profiles, and create posts with text, images, or videos.',
-      react: 'react',
-      tailwind: 'tailwind',
-      link: 'https://blogwebapp-red.vercel.app/',
-      github: 'https://github.com/Fatzy070/blogwebapp',
-      image: blog,
-      node: 'firebase',
-      data: 'MongoDB'
-    },
-    {
-      id: 7,
       siteName: 'crypgo',
       about: 'A modern cRryptocurrency tracker that provides users with real-time data on various coins. Built with React and TailwindCSS for a sleek interface, and Node.js for backend operations, Crypgo delivers a smooth experience for monitoring and exploring crypto trends.',
       react: 'react',

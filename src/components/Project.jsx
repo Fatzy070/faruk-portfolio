@@ -7,7 +7,7 @@ const Project = () => {
   const { project } = Data;
 
   return (
-    <section className="px-6 py-7 bg-[rgba(2,6,23,255)]" id='projects'>
+    <section className="px-6 py-15 dark:bg-slate-950 " id='projects'>
       <h1 id='project' className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800 dark:text-gray-100">
         My Work & Projects
       </h1>
@@ -15,7 +15,7 @@ const Project = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10 lg:mx-20'>
         {project.map((item) => {
           return (
-            <div key={item} className='bounce bg-[rgba(30,41,59,255)] rounded-[8px] overflow-hidden '> 
+            <div key={item} className='bounce dark:bg-slate-900  rounded-[8px] overflow-hidden '> 
                 <img src={item.image} alt={item.siteName} className='  w-full '/>
                 <div className='p-5'>
                   <h2 className='capitalize text-white font-semibold md:text-2xl'>{item.siteName}</h2>
@@ -43,7 +43,7 @@ const Project = () => {
                     <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-gray-700  capitalize  ' >{item.data}</span>
                   )}
                   </div>
-                  <div className='flex gap-3'>
+                  <div className='flex justify-between mt-3'>
                     <a href={item.link}
                     target='_blank'
                     rel='noopener noreferrer'
