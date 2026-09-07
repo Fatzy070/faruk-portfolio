@@ -13,7 +13,7 @@ const Contact = () => {
             <div id='contacts'>
                 <section id='contact' className='text-center px-3  md:px-15 lg:px-65 py-12 dark:bg-slate-950 '>
                 <h1 className='font-bold text-[1.8rem] md:text-[2.5rem] capitalize'>{get}</h1>
-                <p className='text-gray-400 py-7'>{getText}</p>
+                <p className='text-gray-600 dark:text-gray-400 py-7'>{getText}</p>
                 <div className=' text-white flex justify-center gap-4 flex-wrap'>
                     <a href='https://www.linkedin.com/in/faruk-ogunsola-394815312'
                     target='_blank'

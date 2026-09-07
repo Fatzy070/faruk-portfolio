@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
 :root {
-  --bg: white;
-  --text: black;
+  --bg: #ffffff;
+  --text: #0f172a;
 }
 
 [data-theme="dark"] {
-  --bg: #0f172a;   /* dark background */
-  --text: #f8fafc; /* light text */
+  --bg: #0f172a;
+  --text: #f8fafc;
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  
+  min-width: 320px;
   background-color: var(--bg);
   color: var(--text);
   transition: background 0.3s ease, color 0.3s ease;
+}
+
+[data-theme="light"] .surface-dark {
+  background-color: #ffffff;
+  color: var(--text);
 }
 .fatzy {
   font-family: "Londrina Shadow", sans-serif;

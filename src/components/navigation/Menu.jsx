@@ -27,11 +27,11 @@ const Nav = () => {
 
           {open && (
 
-            <section  className='absolute bg-[rgba(15,23,42,255)] top-0 left-0 h-[100vh] w-full '>
+            <section  className='surface-dark absolute bg-[rgba(15,23,42,255)] top-0 left-0 h-[100vh] w-full '>
                 <div className='flex justify-end p-5'
                     onClick={toggle}
                 >
-                    <IoClose size={25} color='white'/>
+                    <IoClose size={25} />
                 </div>
             <section className='h-[80%] flex items-center justify-center'>
                 <div>   
@@ -40,7 +40,7 @@ const Nav = () => {
                     return (
                         <div key={index}
                         onClick={ () => scrollToSection(item.id) }
-                        className='home text-gray-300 text-center pt-6 font-semibold text-[1.9rem]'> 
+                        className='home text-gray-700 dark:text-gray-300 text-center pt-6 font-semibold text-[1.9rem]'> 
                            
                                 {item.name} 
                             

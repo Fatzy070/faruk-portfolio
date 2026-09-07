@@ -14,33 +14,33 @@ const Project = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10 lg:mx-20'>
         {project.map((item) => {
-          return (
-            <div key={item} className='bounce dark:bg-slate-900  rounded-[8px] overflow-hidden '> 
+          return ( 
+            <div key={item} className='bounce bg-white shadow-lg shadow-slate-900/50 dark:bg-slate-900 dark:shadow-slate-950/50 rounded-[8px] overflow-hidden '>
                 <img src={item.image} alt={item.siteName} className='  w-full '/>
                 <div className='p-5'>
-                  <h2 className='capitalize text-white font-semibold md:text-2xl'>{item.siteName}</h2>
-                  <p className='py-2 text-gray-300 text-[13px] md:text-[1rem]'>{item.about}</p>
+              <h2 className='capitalize text-gray-900 dark:text-white font-semibold md:text-2xl'>{item.siteName}</h2>
+              <p className='py-2 text-gray-700 dark:text-gray-300 text-[13px] md:text-[1rem]'>{item.about}</p>
                   <div className='py-3'>
                     { item.html && (
-                      <span className='rounded-2xl text-[14px] px-2 py-[2px] mr-2  bg-gray-700  capitalize  '>{item.html}</span>
+                      <span className='rounded-2xl text-[14px] px-2 py-[2px] mr-2 bg-slate-200 text-slate-700 dark:bg-gray-700 dark:text-gray-100 capitalize'>{item.html}</span>
                   )}
                   { item.css && (
-                      <span className='px-2 rounded-2xl py-[2px] text-[14px] mr-2 bg-gray-700  capitalize  '>{item.css}</span>
+                      <span className='px-2 rounded-2xl py-[2px] text-[14px] mr-2 bg-slate-200 text-slate-700 dark:bg-gray-700 dark:text-gray-100 capitalize'>{item.css}</span>
                   )}
                   { item.javascript && (
-                      <span className='px-2 rounded-2xl py-[2px] text-[14px] mr-2 bg-gray-700  capitalize  '>{item.javascript}</span>
+                      <span className='px-2 rounded-2xl py-[2px] text-[14px] mr-2 bg-slate-200 text-slate-700 dark:bg-gray-700 dark:text-gray-100 capitalize'>{item.javascript}</span>
                   )}
                   {item.react && (
-                    <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-gray-700  capitalize  '>{item.react} </span>
+                    <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-slate-200 text-slate-700 dark:bg-gray-700 dark:text-gray-100 capitalize'>{item.react}</span>
                   )}
                   {item.tailwind && (
-                    <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-gray-700  capitalize  '>{item.tailwind} </span>
+                    <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-slate-200 text-slate-700 dark:bg-gray-700 dark:text-gray-100 capitalize'>{item.tailwind}</span>
                   )}
                   {item.node && (
-                    <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-gray-700  capitalize  ' >{item.node}</span>
+                    <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-slate-200 text-slate-700 dark:bg-gray-700 dark:text-gray-100 capitalize'>{item.node}</span>
                   )}
                   {item.data && (
-                    <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-gray-700  capitalize  ' >{item.data}</span>
+                    <span className='px-2 rounded-2xl text-[14px] py-[2px] mr-2 bg-slate-200 text-slate-700 dark:bg-gray-700 dark:text-gray-100 capitalize'>{item.data}</span>
                   )}
                   </div>
                   <div className='flex justify-between mt-3'>
