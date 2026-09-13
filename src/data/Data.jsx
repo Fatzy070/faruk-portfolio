@@ -65,7 +65,7 @@ I’m passionate about writing clean, maintainable code and continuously improvi
     {
       id: 1,
       siteName: 'Nexus social',
-      about: `Nexus is a modern social platform built to bring people, conversations, and communities together in one seamless space. Users can share posts, discover content, follow people, chat privately or in groups, share media and voice messages, receive real-time notifications, and manage their privacy and account settings.
+      about: `Nexus is a social platform built to bring people, conversations, and communities together in one seamless space. Users can share posts, discover content, follow people, chat privately or in groups, share media and voice messages, receive real-time notifications, and manage their privacy and account settings.
       Nexus is designed around real-time communication, meaningful social interaction, and a fast, polished experienceacross both web and mobile.`,
       react: 'next.js',
       tailwind: 'tailwind',
@@ -91,7 +91,7 @@ I’m passionate about writing clean, maintainable code and continuously improvi
     {
       id: 2,
       siteName: 'learnhub',
-      about: 'LearnHub is a modern mini-LMS platform designed to make learning simple, organized, and accessible. It provides a clean interface where students can explore courses, watch lessons, track progress, and manage their learning journey without distractions. The platform includes features such as video playback, user authentication, progress saving, and structured course organization all built to deliver a smooth, efficient learning experience.',
+      about: 'LearnHub is a mini-LMS platform designed to make learning simple, organized, and accessible. It provides a clean interface where students can explore courses, watch lessons, track progress, and manage their learning journey without distractions. The platform includes features such as video playback, user authentication, progress saving, and structured course organization all built to deliver a smooth, efficient learning experience.',
       react: 'react',
       tailwind: 'tailwind',
       link: 'https://learnhub-henna.vercel.app/',
@@ -103,7 +103,7 @@ I’m passionate about writing clean, maintainable code and continuously improvi
     {
       id: 3,
       siteName: 'Zyntek',
-      about: 'A modern e-commerce website that combines tech and fashion into one platform. It features a clean UI, responsive layouts, dynamic product displays, and smooth navigation for an elegant shopping experience. The project highlights my frontend skills in React, Tailwind CSS, and responsive web design, with a focus on performance and visual consistency across devices.',
+      about: 'A e-commerce website that combines tech and fashion into one platform. It features a clean UI, responsive layouts, dynamic product displays, and smooth navigation for an elegant shopping experience. The project highlights my frontend skills in React, Tailwind CSS, and responsive web design, with a focus on performance and visual consistency across devices.',
       react: 'react',
       tailwind: 'tailwind',
       link: 'https://zyntek-silk.vercel.app/',
@@ -115,7 +115,7 @@ I’m passionate about writing clean, maintainable code and continuously improvi
     {
       id: 4,
       siteName: 'Fintech',
-      about: 'A modern fintech app that simplifies personal finance by helping users track expenses, monitor savings, and make smarter financial decisions. Built with cutting-edge web technologies, it combines a sleek, responsive interface with secure, real-time features for seamless money management.',
+      about: 'A fintech app that simplifies personal finance by helping users track expenses, monitor savings, and make smarter financial decisions. Built with cutting-edge web technologies, it combines a sleek, responsive interface with secure, real-time features for seamless money management.',
       react: 'react',
       tailwind: 'tailwind',
       link: 'https://naijafintech.vercel.app/',
@@ -139,7 +139,7 @@ I’m passionate about writing clean, maintainable code and continuously improvi
     {
       id: 6,
       siteName: 'crypgo',
-      about: 'A modern cRryptocurrency tracker that provides users with real-time data on various coins. Built with React and TailwindCSS for a sleek interface, and Node.js for backend operations, Crypgo delivers a smooth experience for monitoring and exploring crypto trends.',
+      about: 'A cRryptocurrency tracker that provides users with real-time data on various coins. Built with React and TailwindCSS for a sleek interface, and Node.js for backend operations, Crypgo delivers a smooth experience for monitoring and exploring crypto trends.',
       react: 'react',
       tailwind: 'tailwind',
       link: 'https://crypto-psi-five-92.vercel.app/',
