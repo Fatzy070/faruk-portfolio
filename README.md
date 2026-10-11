@@ -1,12 +1,48 @@
-# React + Vite
+# Ogunsola Faruk · Software Developer — Web & Mobile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A production-oriented portfolio built with React, TypeScript and Vite. Features two flagship case studies, Nexus web/mobile work, an earlier-project archive, capability groups, factual experience, a local CV, and direct contact.
 
-Currently, two official plugins are available:
+## Develop
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Requires Node 22.12+ (Node 24 recommended).
 
-## Expanding the ESLint configuration
+```sh
+npm ci
+npm run dev
+npm run typecheck
+npm run lint
+npm run check-content
+npm run build
+npm run preview
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Deploy `dist/` to static hosting. The build pre-renders the page for SEO and immediate content; React adds the interactions on load. No server, secret, database or external form service is needed.
+
+## Update content
+
+Edit `src/content/portfolio.ts`. Add a project object to `projects` with its image, links, stack and engineering notes; `ProjectFeature` renders it automatically. Capability groups, experience, navigation, social links and archived work also come from data. Put optimized screenshots in `public/images/` and provide accurate alt text and image dimensions in the component if adding a new image format.
+
+- Components: `src/components/`
+- Theme, typography, layout and responsive rules: `src/index.css`
+- Reusable motion behavior: `src/hooks/useScrollEffects.ts`
+- Build-time HTML rendering: `scripts/prerender.mjs`
+- Factual sources and project selection: `docs/content-audit.md`
+
+The original Google Docs CV is retained as `profile.originalCvUrl`, but returned 401 anonymously. The public site uses `public/ogunsola-faruk-cv.pdf`. Regenerate it after changing experience or project content (Python with ReportLab required):
+
+```sh
+node --experimental-strip-types --input-type=module -e "import {profile,experience,education,projects,capabilities} from './src/content/portfolio.ts'; console.log(JSON.stringify({profile,experience,education,projects,capabilities}))" > /tmp/portfolio-content.json
+python3 scripts/generate-cv.py /tmp/portfolio-content.json
+```
+
+The CV generator uses DejaVu Sans fonts from `/usr/share/fonts/truetype/dejavu/`; adjust those paths on other operating systems. The generated PDF is committed as a static asset, so deployment does not require Python.
+
+## SEO and domain
+
+The verified existing homepage is `https://ogunsolafaruk.vercel.app/`. If the domain changes, update `profile.siteUrl`, canonical/Open Graph/JSON-LD URLs in `index.html`, `public/sitemap.xml`, and `public/robots.txt`. Replace `public/social-preview.png` when changing visual identity. Production content is emitted into `dist/index.html` by the build step.
+
+## Interaction and accessibility
+
+Native anchor navigation; mobile disclosure menu closes with Escape and returns focus to its button. Case studies and the archive use native keyboard-operable disclosures. Focus rings, skip link, semantic headings, named controls and polite copy feedback are included. Animations respect `prefers-reduced-motion`; content remains visible with JavaScript disabled in the production build. All contact is direct mail/copy; there are no fake form-success states.
+
+The original source images remain in `src/assets/` as historical source material and are not included in the runtime bundle. The user's untracked `src/assets/parvis` is preserved.

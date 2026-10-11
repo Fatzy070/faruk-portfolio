@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ogunsolafaruk.vercel.app/sitemap.xml
