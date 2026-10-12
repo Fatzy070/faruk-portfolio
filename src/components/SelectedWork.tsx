@@ -192,7 +192,7 @@ export function SelectedWork() {
           </div>
           <img
             className="w-[115%] max-w-none my-[30px] mx-0 [transform:rotate(-3deg)] rounded-[5px] shadow-[0_12px_30px_#332b1d20] mobile:my-[22px] mobile:max-h-[220px] mobile:object-cover mobile:object-top"
-            src="/images/nexus.webp"
+            src="/images/nexus.png"
             alt="Nexus social web application with feed, conversations and community navigation"
             width="1200"
             height="617"
