@@ -10,7 +10,10 @@ export default function App() {
   useScrollEffects();
   return (
     <>
-      <a className="skip-link" href="#main">
+      <a
+        className="fixed top-[8px] left-[16px] z-[100] [transform:translateY(-160%)] bg-ink text-paper py-[14px] px-[20px] [&:focus]:[transform:translateY(0)]"
+        href="#main"
+      >
         Skip to content
       </a>
       <Navigation />
