@@ -18,6 +18,7 @@ export interface Project {
   architecture: string[];
   note?: string;
 }
+
 export interface Experience {
   company: string;
   role: string;
@@ -32,7 +33,7 @@ export const profile = {
   siteUrl: 'https://ogunsolafaruk.vercel.app',
   cvUrl: '/ogunsola-faruk-cv.pdf',
   originalCvUrl:
-    'https://docs.google.com/document/d/1A-scRXhm92X1d0wouVZSTBpoCgE4S9XwBVJwpVBaqNA/edit',
+    'https://docs.google.com/document/d/1_DclCK5eixq8htIhFxsdkPfxbetx_vLpReRsgupoNQ4/edit',
   cvDownloadUrl: '/ogunsola-faruk-cv.pdf',
 };
 export const navigation = [
