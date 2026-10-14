@@ -143,6 +143,22 @@
   a:hover > svg {
     transform: translate(2px, -2px);
   }
+  /* Capture both themes at their final colors before the circular reveal. */
+  .theme-switching a,
+  .theme-switching button {
+    transition: none !important;
+  }
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+  }
+  ::view-transition-old(root) {
+    z-index: 0;
+  }
+  ::view-transition-new(root) {
+    z-index: 1;
+  }
   .reveal-ready {
     opacity: 0;
     transform: translateY(25px);

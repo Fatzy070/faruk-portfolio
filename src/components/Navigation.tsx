@@ -1,5 +1,6 @@
 import { containerClass } from './styles';
 import { useEffect, useRef, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { ArrowUpRight, Menu, Moon, Sun, X } from 'lucide-react';
 import { navigation } from '../content/portfolio';
 export function Navigation() {
@@ -8,6 +9,72 @@ export function Navigation() {
     () => typeof document !== 'undefined' && document.documentElement.dataset.theme === 'dark',
   );
   const trigger = useRef<HTMLButtonElement>(null);
+  const themeToggle = useRef<HTMLButtonElement>(null);
+  const themeTransitioning = useRef(false);
+
+  function toggleTheme() {
+    if (themeTransitioning.current) return;
+
+    const nextDark = !dark;
+    const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const button = themeToggle.current;
+
+    if (!document.startViewTransition || preference.matches || !button) {
+      setDark(nextDark);
+      return;
+    }
+
+    const rect = button.getBoundingClientRect();
+    const x = rect.left + rect.width / 2;
+    const y = rect.top + rect.height / 2;
+    const radius =
+      Math.max(
+        Math.hypot(x, y),
+        Math.hypot(window.innerWidth - x, y),
+        Math.hypot(x, window.innerHeight - y),
+        Math.hypot(window.innerWidth - x, window.innerHeight - y),
+      ) + 2;
+    const clipPath = [`circle(0px at ${x}px ${y}px)`, `circle(${radius}px at ${x}px ${y}px)`];
+
+    themeTransitioning.current = true;
+    document.documentElement.classList.add('theme-switching');
+
+    try {
+      const transition = document.startViewTransition(() => {
+        flushSync(() => setDark(nextDark));
+        document.documentElement.dataset.theme = nextDark ? 'dark' : 'light';
+      });
+
+      void transition.ready
+        .then(() => {
+          document.documentElement.animate(
+            { clipPath },
+            {
+              duration: 620,
+              easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+              fill: 'forwards',
+              pseudoElement: '::view-transition-new(root)',
+            },
+          );
+        })
+        .catch(() => {
+          /* A skipped transition still applies the new theme. */
+        });
+
+      void transition.finished
+        .finally(() => {
+          document.documentElement.classList.remove('theme-switching');
+          themeTransitioning.current = false;
+        })
+        .catch(() => {
+          /* Keep the toggle available if the transition is interrupted. */
+        });
+    } catch {
+      document.documentElement.classList.remove('theme-switching');
+      themeTransitioning.current = false;
+      setDark(nextDark);
+    }
+  }
   useEffect(() => {
     document.documentElement.dataset.theme = dark ? 'dark' : 'light';
     try {
@@ -55,8 +122,9 @@ export function Navigation() {
         </nav>
         <div className="flex gap-[18px] items-center mobile:gap-[5px]">
           <button
+            ref={themeToggle}
             className="icon-button w-[44px] h-[44px] grid place-items-center [border:0] rounded-[50%] [&:hover]:bg-surface mobile:w-[36px] print:hidden!"
-            onClick={() => setDark(!dark)}
+            onClick={toggleTheme}
             aria-label={`Switch to ${dark ? 'light' : 'dark'} theme`}
           >
             {dark ? <Sun size={18} /> : <Moon size={18} />}
