@@ -28,3 +28,14 @@ Original Google Docs CV export returned 401 anonymously. Public CV actions now u
 Production application JS: approximately 67 KB gzip. CSS: approximately 6 KB gzip. Two self-hosted Latin font files total approximately 62 KB. Four displayed WebP images total approximately 128 KB. No animation framework, router or remote font dependency.
 
 No Lighthouse score, measured frame-rate guarantee, screen-reader certification, deployment or native-app runtime validation is claimed. The portfolio is a static build, ready for the existing hosting workflow.
+
+## Tailwind migration · 11 October 2026
+
+- Tailwind CSS 4 with the Vite plugin; UI utilities live in TSX, with seven shared utility combinations. Global CSS reduced from 1,876 to approximately 215 lines.
+- Production build/prerender, strict TypeScript, lint, content checks and `git diff --check` pass.
+- Compared 514 rendered DOM elements against a frozen pre-refactor build at 320, 390, 768, 900 and 1440px. Corrected letter-spacing and the hero badge transition found during comparison. Also checked the 1800px layout.
+- Final 1440/1800px comparisons matched the recorded visible layout, typography, colors, borders and transition values. Remaining differences were styles on clipped screen-reader text. Desktop screenshots were also visually inspected; minor screenshot differences were hover/focus/scrollbar state.
+- Verified mobile navigation, Escape focus return, dark theme, expanded case studies, archive disclosure, navigation hover underline, keyboard focus ring, hero animation name and scroll-reveal/progress updates. No observed browser warnings/errors.
+- Inspected tablet and mobile screenshots; no horizontal overflow at the checked mobile/tablet widths.
+- Audited reduced-motion and print cascade. Their utility overrides are important so layout breakpoint variants cannot restore motion or override print styles. OS-level reduced-motion emulation remains unavailable through the browser tools.
+- No content, contact handlers, CV targets, project data or reveal-hook logic changed.

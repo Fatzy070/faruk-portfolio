@@ -1,24 +1,27 @@
 import { readFile, writeFile } from 'node:fs/promises';
-import { createServer } from 'vite';
+import { resolve } from 'node:path';
 import { createElement } from 'react';
 import { renderToString } from 'react-dom/server';
+import { createServer } from 'vite';
 
-// Render content at build time for crawlers and visitors before JS loads.
-// Client effects progressively add theme controls, reveals and copy feedback.
-const server = await createServer({
-  server: { middlewareMode: true, hmr: false, ws: false, watch: null },
+const output = resolve('dist/index.html');
+const vite = await createServer({
   appType: 'custom',
+  server: { middlewareMode: true, hmr: false, ws: false, watch: null },
 });
+
 try {
-  const { default: App } = await server.ssrLoadModule('/src/App.tsx');
-  const markup = renderToString(createElement(App));
-  const html = await readFile('dist/index.html', 'utf8');
-  if (!html.includes('<div id="root"></div>')) throw new Error('Missing prerender root');
-  await writeFile(
-    'dist/index.html',
-    html.replace('<div id="root"></div>', `<div id="root">${markup}</div>`),
-  );
+  const { default: App } = await vite.ssrLoadModule('/src/App.tsx');
+  const html = await readFile(output, 'utf8');
+  const root = '<div id="root"></div>';
+
+  if (!html.includes(root)) {
+    throw new Error('Could not find the root element in dist/index.html');
+  }
+
+  const rendered = renderToString(createElement(App));
+  await writeFile(output, html.replace(root, `<div id="root">${rendered}</div>`));
   console.log('Prerendered portfolio content into dist/index.html');
 } finally {
-  await server.close();
+  await vite.close();
 }

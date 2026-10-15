@@ -1,26 +1,43 @@
+import { containerClass, sectionIntroClass, sectionTitleClass } from './styles';
 import { ArrowDownRight } from 'lucide-react';
 import { capabilities } from '../content/portfolio';
 import { SectionLabel, Tags } from './Primitives';
 export function Expertise() {
   return (
-    <section id="expertise" className="expertise-section" aria-labelledby="expertise-title">
-      <div className="wrap">
-        <div className="section-intro" data-reveal>
+    <section
+      id="expertise"
+      className="bg-[#272e26] text-[#f2f2e7] pt-[85px] pb-[90px] px-0 [--muted:#b8bdaf] [--line:#4a5145] [--accent:#e89a7b] mobile:py-[55px] mobile:px-0 print:bg-[#eee]! print:text-[#111]! print:py-[25px]! print:px-0!"
+      aria-labelledby="expertise-title"
+    >
+      <div className={containerClass}>
+        <div className={sectionIntroClass} data-reveal>
           <div>
             <SectionLabel number="02">Engineering range</SectionLabel>
-            <h2 id="expertise-title">
+            <h2 className={sectionTitleClass} id="expertise-title">
               Across the stack.
               <br />
               Close to the product.
             </h2>
           </div>
-          <ArrowDownRight className="section-arrow" strokeWidth={1} aria-hidden="true" />
+          <ArrowDownRight
+            className="w-[90px] h-[90px] text-[#bec6ac] mobile:hidden"
+            strokeWidth={1}
+            aria-hidden="true"
+          />
         </div>
-        <div className="capability-grid">
+        <div className="grid grid-cols-[repeat(3,_1fr)] gap-[42px] mt-[56px] [&_article_>_p]:text-muted [&_article_>_p]:text-[13px] [&_article_>_p]:min-h-[90px] [&_article_>_p]:leading-[1.85] [&_.tags]:mt-[23px] [&_.tags]:gap-[7px] [&_.tags_li]:border-[#4c5545] [&_.tags_li]:text-[#c6cbbb] [&_.tags_li]:text-[10px] tablet:gap-[26px] tablet:[&_article_>_p]:min-h-[110px] mobile:grid-cols-[1fr] mobile:gap-[30px] mobile:mt-[30px] mobile:[&_article_>_p]:col-[2] mobile:[&_article_>_p]:min-h-0 mobile:[&_article_>_p]:text-[12px] mobile:[&_.tags]:col-[2] mobile:[&_.tags]:mt-[17px]">
           {capabilities.map((item) => (
-            <article key={item.number} data-reveal>
-              <span className="capability-number">/{item.number}</span>
-              <h3>{item.title}</h3>
+            <article
+              className="[border-top:1px_solid_var(--line)] pt-[22px] mobile:pt-[18px] mobile:grid mobile:grid-cols-[40px_1fr] mobile:gap-x-[7px]"
+              key={item.number}
+              data-reveal
+            >
+              <span className="text-[10px] font-medium tracking-[1.1px] uppercase text-[#a5ae9b] mobile:pt-[5px]">
+                /{item.number}
+              </span>
+              <h3 className="text-[23px] font-normal tracking-[-0.7px] mt-[32px] mb-[15px] mx-0 mobile:text-[24px] mobile:mt-0 mobile:mb-[13px] mobile:mx-0">
+                {item.title}
+              </h3>
               <p>{item.description}</p>
               <Tags items={item.tools} />
             </article>
