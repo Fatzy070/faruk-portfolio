@@ -1,13 +1,15 @@
+import type { CSSProperties } from 'react';
 import { containerClass, sectionTitleClass, textLinkClass, eyebrowClass } from './styles';
 import { Download } from 'lucide-react';
 import { education, experience, profile } from '../content/portfolio';
 import { ExternalLink, SectionLabel } from './Primitives';
+
 export function AboutSection() {
   return (
     <>
       <section
         id="about"
-        className={`${containerClass} py-[118px] tablet:py-[96px] mobile:py-[60px] print:py-[20px]!`}
+        className={`${containerClass} relative z-[2] py-[118px] tablet:py-[96px] mobile:py-[60px] print:py-[20px]!`}
         aria-labelledby="about-title"
       >
         <div
@@ -17,14 +19,36 @@ export function AboutSection() {
           <div>
             <SectionLabel number="03">A little context</SectionLabel>
             <h2 className={sectionTitleClass} id="about-title">
-              I like knowing
-              <br />
-              how the whole
-              <br />
-              <em className="font-editorial font-normal text-accent">thing works.</em>
+              <span className="mask-line">
+                <span
+                  className="mask-line-inner"
+                  style={{ '--line-delay': '0.04s' } as CSSProperties}
+                >
+                  I like knowing
+                </span>
+              </span>
+              <span className="mask-line">
+                <span
+                  className="mask-line-inner"
+                  style={{ '--line-delay': '0.14s' } as CSSProperties}
+                >
+                  how the whole
+                </span>
+              </span>
+              <span className="mask-line">
+                <span
+                  className="mask-line-inner"
+                  style={{ '--line-delay': '0.24s' } as CSSProperties}
+                >
+                  <em className="font-editorial font-normal text-accent">thing works.</em>
+                </span>
+              </span>
             </h2>
           </div>
-          <div className="pb-[5px] [&_>_p_+_p]:mt-[18px] stack:max-w-[640px] stack:ml-auto mobile:ml-0">
+          <div
+            className="stagger-item pb-[5px] [&_>_p_+_p]:mt-[18px] stack:max-w-[640px] stack:ml-auto mobile:ml-0"
+            style={{ '--stagger-delay': '0.26s' } as CSSProperties}
+          >
             <p className="text-[15px] text-muted leading-[1.85] mobile:text-[13px]">
               That’s why my work spans the interface, the API and the systems underneath. I build
               with React and React Native, and work through the backend, integrations and deployment
@@ -50,19 +74,41 @@ export function AboutSection() {
       </section>
       <section
         id="experience"
-        className={`${containerClass} [border-top:1px_solid_var(--line)] pt-[84px] pb-[105px] grid grid-cols-[0.8fr_1.2fr] gap-[90px] tablet:gap-[55px] mobile:grid-cols-[1fr] mobile:pt-[50px] mobile:pb-[60px] mobile:gap-[35px] print:py-[20px]!`}
+        className={`${containerClass} relative z-[2] [border-top:1px_solid_var(--line)] pt-[84px] pb-[105px] grid grid-cols-[0.8fr_1.2fr] gap-[90px] tablet:gap-[55px] mobile:grid-cols-[1fr] mobile:pt-[50px] mobile:pb-[60px] mobile:gap-[35px] print:py-[20px]!`}
         aria-labelledby="experience-title"
       >
         <div className="[&_h2]:text-[43px] mobile:[&_h2]:text-[37px]" data-reveal>
           <SectionLabel number="04">Experience</SectionLabel>
           <h2 className={sectionTitleClass} id="experience-title">
-            Building.
-            <br />
-            Contributing.
-            <br />
-            Getting better.
+            <span className="mask-line">
+              <span
+                className="mask-line-inner"
+                style={{ '--line-delay': '0.04s' } as CSSProperties}
+              >
+                Building.
+              </span>
+            </span>
+            <span className="mask-line">
+              <span
+                className="mask-line-inner"
+                style={{ '--line-delay': '0.13s' } as CSSProperties}
+              >
+                Contributing.
+              </span>
+            </span>
+            <span className="mask-line">
+              <span
+                className="mask-line-inner"
+                style={{ '--line-delay': '0.22s' } as CSSProperties}
+              >
+                Getting better.
+              </span>
+            </span>
           </h2>
-          <div className="mt-[45px] max-w-[250px] [border-top:1px_solid_var(--line)] pt-[24px] [&_.eyebrow]:text-[9px] [&_.eyebrow]:text-muted mobile:mt-[25px] mobile:max-w-none mobile:pt-[18px]">
+          <div
+            className="stagger-item mt-[45px] max-w-[250px] [border-top:1px_solid_var(--line)] pt-[24px] [&_.eyebrow]:text-[9px] [&_.eyebrow]:text-muted mobile:mt-[25px] mobile:max-w-none mobile:pt-[18px]"
+            style={{ '--stagger-delay': '0.28s' } as CSSProperties}
+          >
             <span className={eyebrowClass}>Education / {education.year}</span>
             <h3 className="text-[14px] font-medium mt-[13px] leading-[1.6] mobile:text-[13px] mobile:mt-[10px]">
               {education.title}
@@ -76,6 +122,7 @@ export function AboutSection() {
               key={item.company}
               className="relative pt-0 pb-[34px] pr-0 pl-[27px] [border-left:1px_solid_var(--line)] ml-[4px] [&:last-child]:pb-0 [&:before]:[content:''] [&:before]:absolute [&:before]:top-[5px] [&:before]:left-[-4px] [&:before]:w-[7px] [&:before]:h-[7px] [&:before]:bg-paper [&:before]:[border:1px_solid_var(--muted)] [&:before]:rounded-[50%] [&:first-child:before]:bg-accent [&:first-child:before]:border-accent [&_li:before]:[content:'—'] [&_li:before]:absolute [&_li:before]:left-0 [&_li:before]:text-accent mobile:pl-[22px] mobile:pb-[30px] print:break-inside-avoid!"
               data-reveal
+              style={{ '--reveal-delay': `${(index * 0.1).toFixed(2)}s` } as CSSProperties}
             >
               <div className="text-[9px] font-medium tracking-[0.4px] uppercase flex items-center gap-[14px] flex-wrap text-muted mb-[17px] mobile:text-[8px]">
                 <span>{item.date}</span>

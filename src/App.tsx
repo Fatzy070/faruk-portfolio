@@ -5,7 +5,9 @@ import { Expertise } from './components/Expertise';
 import { AboutSection } from './components/AboutSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { LivingBlueprint } from './components/BlueprintGraphics';
 import { useScrollEffects } from './hooks/useScrollEffects';
+
 export default function App() {
   useScrollEffects();
   return (
@@ -17,14 +19,17 @@ export default function App() {
         Skip to content
       </a>
       <Navigation />
-      <main id="main">
-        <Hero />
-        <SelectedWork />
-        <Expertise />
-        <AboutSection />
-        <ContactSection />
-      </main>
-      <Footer />
+      <div className="relative overflow-x-clip">
+        <LivingBlueprint />
+        <main id="main">
+          <Hero />
+          <SelectedWork />
+          <Expertise />
+          <AboutSection />
+          <ContactSection />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }

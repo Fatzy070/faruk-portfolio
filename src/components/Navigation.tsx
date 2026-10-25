@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { flushSync } from 'react-dom';
 import { ArrowUpRight, Menu, Moon, Sun, X } from 'lucide-react';
 import { navigation } from '../content/portfolio';
+
 export function Navigation() {
   const [open, setOpen] = useState(false);
   const [dark, setDark] = useState(
@@ -155,7 +156,7 @@ export function Navigation() {
       >
         {[...navigation, { id: 'contact', label: 'Let’s talk' }].map((item, index) => (
           <a
-            className="mobile:flex mobile:gap-[20px] mobile:items-center mobile:text-[24px] mobile:py-[15px] mobile:px-[5px] mobile:[border-bottom:1px_solid_var(--line)]"
+            className="mobile:flex mobile:gap-[20px] mobile:items-center mobile:text-[17px] mobile:py-[15px] mobile:px-[5px] mobile:[border-bottom:1px_solid_var(--line)]"
             key={item.id}
             href={`#${item.id}`}
             onClick={() => setOpen(false)}
