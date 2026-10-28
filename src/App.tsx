@@ -25,7 +25,7 @@ export default function App() {
           <Hero />
           <SelectedWork />
           <Expertise />
-          <AboutSection />
+          {/* <AboutSection /> */}
           <ContactSection />
         </main>
         <Footer />
