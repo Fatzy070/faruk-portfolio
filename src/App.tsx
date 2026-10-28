@@ -2,7 +2,7 @@ import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { SelectedWork } from './components/SelectedWork';
 import { Expertise } from './components/Expertise';
-import { AboutSection } from './components/AboutSection';
+// import { AboutSection } from './components/AboutSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { LivingBlueprint } from './components/BlueprintGraphics';
