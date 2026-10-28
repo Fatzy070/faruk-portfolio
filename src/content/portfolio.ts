@@ -30,6 +30,8 @@ export const profile = {
   name: 'Ogunsola Faruk',
   role: 'Software Developer — Web & Mobile',
   email: 'ogunsolafark8@gmail.com',
+  whatsapp: '+2348088429227',
+  whatsappUrl: 'https://wa.me/2348088429227',
   siteUrl: 'https://ogunsolafaruk.vercel.app',
   cvUrl: '/ogunsola-faruk-cv.pdf',
   originalCvUrl:
@@ -46,6 +48,7 @@ export const socials = [
   { name: 'GitHub', url: 'https://github.com/Fatzy070' },
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/faruk-ogunsola-394815312' },
   { name: 'X / Twitter', url: 'https://x.com/fatzy_tech' },
+  { name: 'WhatsApp', url: 'https://wa.me/2348088429227' },
 ];
 export const projects: Project[] = [
   {
