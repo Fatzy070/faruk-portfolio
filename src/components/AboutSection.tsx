@@ -56,8 +56,8 @@ export function AboutSection() {
             </p>
             <p className="text-[15px] text-muted leading-[1.85] mobile:text-[13px]">
               My projects are where that approach becomes concrete: learning tools in Parvis, a
-              document engine in Papertrail, and connected experiences across web and mobile in
-              Nexus.
+              document engine in Papertrail, 3D digital letters in WithWords, and connected
+              experiences across web and mobile in Nexus.
             </p>
             <div className="[&_>_a]:inline-flex [&_>_a]:gap-[12px] [&_>_a]:items-center [&_>_a]:text-[12px] [&_>_a]:font-medium [&_>_a]:min-h-[44px] [&_>_a:hover]:text-accent flex flex-wrap gap-[26px] mt-[25px] mobile:mt-[14px]">
               <ExternalLink href={profile.cvUrl}>View my CV</ExternalLink>

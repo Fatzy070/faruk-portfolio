@@ -36,10 +36,18 @@ function handleStagePointerLeave(event: PointerEvent<HTMLElement>) {
 
 function ProjectFeature({ project }: { project: Project }) {
   const isPapertrail = project.id === 'papertrail';
+  const isWithWords = project.id === 'withwords';
+
+  const themeClasses =
+    project.theme === 'lilac'
+      ? '[&_.project-visual]:bg-[#e1e0ee] [&_.project-visual]:text-[#30364d] [&_.browser-frame]:max-w-[780px] mobile:[&_.browser-frame]:w-full mobile:[&_.browser-frame]:ml-0'
+      : project.theme === 'rose'
+        ? '[&_.project-visual]:bg-[#ecdedd] [&_.project-visual]:text-[#452028] [&_.browser-frame]:max-w-[900px]'
+        : '';
 
   return (
     <article
-      className={`project-card mb-[64px] mobile:mb-[45px] print:break-inside-avoid! ${project.theme === 'lilac' ? '[&_.project-visual]:bg-[#e1e0ee] [&_.project-visual]:text-[#30364d] [&_.browser-frame]:max-w-[780px] mobile:[&_.browser-frame]:w-full mobile:[&_.browser-frame]:ml-0' : ''}`}
+      className={`project-card mb-[64px] mobile:mb-[45px] print:break-inside-avoid! ${themeClasses}`}
       data-reveal
       id={project.id}
     >
@@ -60,7 +68,17 @@ function ProjectFeature({ project }: { project: Project }) {
         <div className="project-stage-header relative z-[2] [&_>_span:nth-child(2)]:text-[10px] [&_>_span:nth-child(2)]:font-medium [&_>_span:nth-child(2)]:tracking-[1.1px] [&_>_span:nth-child(2)]:uppercase flex justify-between items-center mb-[30px] [&_>_span:first-child]:text-[30px] [&_>_span:first-child]:font-bold [&_>_span:first-child]:tracking-[-1.4px] tablet:mb-[17px] mobile:mb-[13px] mobile:[&_>_span:first-child]:text-[25px]">
           <span>
             {project.name.toLowerCase()}
-            <span className={isPapertrail ? 'text-[#525b88]' : 'text-[#36735b]'}>.</span>
+            <span
+              className={
+                isPapertrail
+                  ? 'text-[#525b88]'
+                  : isWithWords
+                    ? 'text-[#8c1d2e]'
+                    : 'text-[#36735b]'
+              }
+            >
+              .
+            </span>
           </span>
           <span className="text-[8px] font-medium tracking-[1px] uppercase flex gap-[7px] items-center mobile:text-[7px] mobile:tracking-[0.7px]">
             <span className="w-[5px] h-[5px] rounded-[50%] bg-current animate-pulse" />
@@ -227,7 +245,7 @@ export function SelectedWork() {
         >
           <p className={eyebrowClass}>
             <Smartphone size={16} />
-            03 / {mobileProject.label}
+            04 / {mobileProject.label}
           </p>
           <h3 className="text-[37px] font-medium tracking-[-1.3px] leading-[1.2] mt-[24px] mb-[22px] mx-0 tablet:text-[32px] mobile:text-[34px] mobile:mt-[18px]">
             <span className="mask-line">

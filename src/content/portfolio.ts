@@ -131,6 +131,47 @@ export const projects: Project[] = [
     ],
     note: 'Current editing scope: native PDF text, images and annotations. Text extraction and export fidelity depend on the source document.',
   },
+  {
+    id: 'withwords',
+    number: '03',
+    name: 'WithWords',
+    category: 'Digital letter platform',
+    headline: 'Bespoke digital letters sealed in interactive 3D.',
+    description:
+      'An intimate digital letter platform designed to bring ceremony back to personal messaging. Senders craft bespoke letters with curated stationery, wax seals, cherished photos and ambient soundtracks, while recipients experience a physics-driven 3D envelope reveal via unique links without account friction.',
+    image: '/images/withwords.webp',
+    imageWidth: 1600,
+    imageHeight: 760,
+    imageAlt: 'WithWords digital letter platform featuring 3D envelope reveal and atmosphere preview',
+    theme: 'rose',
+    technologies: ['React', 'TypeScript', 'Three.js', 'React Three Fiber', 'Node.js', 'Paystack'],
+    liveUrl: 'https://mywithwords.xyz',
+    githubUrl: 'https://github.com/Fatzy070/WithWord',
+    role: 'Full-stack product & 3D experience',
+    architecture: [
+      'Three.js & R3F envelope stage',
+      'Client draft state & audio',
+      'Express REST API & Nanoid',
+      'Paystack, Resend & Cloudinary',
+    ],
+    highlights: [
+      {
+        title: 'Ceremony in the browser',
+        description:
+          'A physics-aware 3D envelope rendered with Three.js and React Three Fiber features interactive hinge motion, wax seal release, realistic candlelit shading, and synchronized ambient soundtrack playback.',
+      },
+      {
+        title: 'Frictionless, link-first access',
+        description:
+          'Senders compose and test the full 3D opening flow without signing up, keeping drafts local. Published letters generate secure, unguessable Nanoid links that recipients unlock instantly across any device.',
+      },
+      {
+        title: 'Verified payments & delivery pipeline',
+        description:
+          'A server-verified Paystack checkout flow unlocks publication, triggering immediate email delivery of access keys via Resend, Cloudinary photograph processing, and automated lifecycle handling.',
+      },
+    ],
+  },
 ];
 export const mobileProject = {
   name: 'Nexus',
