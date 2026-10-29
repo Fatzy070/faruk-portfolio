@@ -104,7 +104,7 @@ export function Navigation() {
           href="#top"
           aria-label="Ogunsola Faruk, back to top"
         >
-          of<span aria-hidden="true">✳</span>
+          of
           <span className="ml-[17px] pl-[17px] [border-left:1px_solid_var(--line)] font-sans text-[12px] font-medium tracking-[0px] leading-[1.35] tablet:hidden mobile:block mobile:text-[10px] mobile:ml-[8px] mobile:pl-[10px] compact:hidden">
             Ogunsola
             <br />
