@@ -142,9 +142,12 @@ export function FlightBee() {
     const onResize = () => {
       vw = window.innerWidth;
       vh = window.innerHeight;
-      const pad = vw < 768 ? 20 : 44;
-      x = Math.max(pad, Math.min(vw - pad - 42, x));
-      y = Math.max(88, Math.min(vh - pad - 36, y));
+      const isMobile = vw < 768;
+      const pad = isMobile ? 18 : 44;
+      const beeW = isMobile ? 44 : 56;
+      const beeH = isMobile ? 33 : 42;
+      x = Math.max(pad, Math.min(vw - pad - beeW, x));
+      y = Math.max(88, Math.min(vh - pad - beeH, y));
     };
     window.addEventListener('resize', onResize);
 
@@ -220,8 +223,11 @@ export function FlightBee() {
       const headerTopPad = isMobile ? 80 : 96;
       const bottomPad = isMobile ? 30 : 44;
 
-      targetX = Math.max(padX, Math.min(vw - padX - (isMobile ? 34 : 44), targetX));
-      targetY = Math.max(headerTopPad, Math.min(vh - bottomPad - 34, targetY));
+      const beeW = isMobile ? 44 : 56;
+      const beeH = isMobile ? 33 : 42;
+
+      targetX = Math.max(padX, Math.min(vw - padX - beeW, targetX));
+      targetY = Math.max(headerTopPad, Math.min(vh - bottomPad - beeH, targetY));
 
       // Damped spring physics
       const springK = 3.4;
@@ -277,7 +283,7 @@ export function FlightBee() {
     >
       <div
         ref={outerRef}
-        className="flight-bee-outer absolute top-0 left-0 w-[42px] h-[32px] mobile:w-[34px] mobile:h-[26px] will-change-transform"
+        className="flight-bee-outer absolute top-0 left-0 w-[56px] h-[42px] mobile:w-[44px] mobile:h-[33px] will-change-transform"
         style={{
           transform: 'translate3d(80vw, 25vh, 0)',
         }}
