@@ -450,6 +450,40 @@
     transform: translate(0, -3px);
   }
 
+  /* Interactive Bee Companion wing flutter */
+  .bee-wing-fore {
+    transform-origin: 22px 14px;
+    animation: bee-wings-flutter-fore var(--bee-flap-speed, 0.065s) ease-in-out infinite alternate;
+  }
+  .bee-wing-hind {
+    transform-origin: 19px 14px;
+    animation: bee-wings-flutter-hind var(--bee-flap-speed, 0.065s) 0.02s ease-in-out infinite alternate;
+  }
+
+  @keyframes bee-wings-flutter-fore {
+    0% {
+      transform: scaleY(1) rotate(0deg);
+    }
+    50% {
+      transform: scaleY(0.24) rotate(-16deg) translateY(-2px);
+    }
+    100% {
+      transform: scaleY(0.85) rotate(12deg);
+    }
+  }
+
+  @keyframes bee-wings-flutter-hind {
+    0% {
+      transform: scaleY(0.85) rotate(8deg);
+    }
+    50% {
+      transform: scaleY(0.28) rotate(-20deg) translateY(-1px);
+    }
+    100% {
+      transform: scaleY(1) rotate(-6deg);
+    }
+  }
+
   @keyframes hero-char-type {
     0% {
       opacity: 0;
@@ -634,6 +668,9 @@
       transform: none !important;
     }
     .bp-scroll-pulse {
+      display: none !important;
+    }
+    .flight-bee-container {
       display: none !important;
     }
   }

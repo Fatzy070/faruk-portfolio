@@ -6,6 +6,7 @@ import { Expertise } from './components/Expertise';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { LivingBlueprint } from './components/BlueprintGraphics';
+import { FlightBee } from './components/FlightBee';
 import { useScrollEffects } from './hooks/useScrollEffects';
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
       <Navigation />
       <div className="relative overflow-x-clip">
         <LivingBlueprint />
+        <FlightBee />
         <main id="main">
           <Hero />
           <SelectedWork />
