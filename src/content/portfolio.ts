@@ -35,7 +35,7 @@ export const profile = {
   siteUrl: 'https://ogunsolafaruk.vercel.app',
   cvUrl: '/ogunsola-faruk-cv.pdf',
   originalCvUrl:
-    'https://docs.google.com/document/d/1_DclCK5eixq8htIhFxsdkPfxbetx_vLpReRsgupoNQ4',
+    'https://docs.google.com/document/d/15m_Wrax04heTuXyKwcsSjbQmuAHWFzQU34IUgiWNEb8',
   cvDownloadUrl: '/ogunsola-faruk-cv.pdf',
 };
 export const navigation = [

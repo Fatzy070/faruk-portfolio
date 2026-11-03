@@ -8,6 +8,7 @@
     "build": "tsc --noEmit && vite build && node scripts/prerender.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
+    "video": "node scripts/record-showcase.mjs",
     "typecheck": "tsc --noEmit",
     "check-content": "node --experimental-strip-types scripts/check-content.ts",
     "format": "prettier --write src scripts/*.{mjs,ts} index.html *.json *.config.*"

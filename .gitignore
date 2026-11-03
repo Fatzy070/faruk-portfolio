@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Video generation tools & artifacts
+/tools/
+/showcase-portfolio.mp4
